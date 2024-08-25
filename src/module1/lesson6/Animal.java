@@ -1,4 +1,4 @@
-package module1.lessons.lesson6;
+package module1.lesson6;
 
 public abstract class Animal {
     private String name;

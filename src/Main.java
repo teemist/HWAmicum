@@ -1,44 +1,23 @@
-import module1.lessons.*;
-import module1.lessons.lesson1.Lesson1;
-import module1.lessons.lesson2.Lesson2;
-import module1.lessons.lesson3.Lesson3;
-import module1.lessons.lesson5.Employee;
-import module1.lessons.lesson4.Lesson4;
-import module1.lessons.lesson6.Cat;
-import module1.lessons.lesson6.Dog;
-import module1.lessons.lesson7.Plate;
+import module1.lesson1.Lesson1;
+import module1.lesson2.Lesson2;
+import module1.lesson3.Lesson3;
+import module1.lesson5.Employee;
+import module1.lesson6.Cat;
+import module1.lesson6.Dog;
+import module1.lesson7.Plate;
+import module2.lesson2.MyArrayDataException;
+import module2.lesson2.MyArraySizeException;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-//        System.out.println("------------Урок 1");
-//        System.out.println("Задание 3: " + Lesson1.method(2, 2, 2, 2));
-//        System.out.println("Задание 4: " + Lesson1.isInRange(2, 9));
-//        System.out.println("Задание 5: ");
-//        Lesson1.isPositive(3);
-//        System.out.println("Задание 6:");
-//        Lesson1.isPositiveReverse(-3);
-//        System.out.println("Задание 7:");
-//        Lesson1.printName("Artem");
-//        System.out.println("Задание 8: " + Lesson1.isLeap(2020));
-//
-//
-//        System.out.println("----------Урок 2");
-//        Lesson2.ex1();
-//        Lesson2.ex2();
-//        Lesson2.ex3();
-//        Lesson2.ex4();
-//        Lesson2.ex5();
-//        int[] arrayEx6 = new int[]{3, 5, 8};
-//        System.out.println(Lesson2.ex6(arrayEx6));
-//        int[] arrayEx7 = new int[]{3, 7, 2, 9};
-//        Lesson2.ex7(arrayEx7, 3); // не закончено
-//
-//        System.out.println("----------Урок 3");
-//        Lesson3.gameRandomNum();
-//
-//
-//        System.out.println();
+        mainModule1();
 
+//        mainModule2();
+    }
+
+    public static void mainModule1() {
         // Урок 1. Введение в платформу Java
         System.out.println("___________________________" +
                 "\nУрок 1");
@@ -53,7 +32,6 @@ public class Main {
         System.out.println("Задание 8:" + Lesson1.isLeap(2020));
 
 
-        // доделать
         // Урок 2. Основные конструкции
         System.out.println("___________________________" +
                 "\nУрок 2");
@@ -62,7 +40,7 @@ public class Main {
         Lesson2.ex3();
         Lesson2.ex4();
         Lesson2.ex5();
-        int[] arrEx6 = new int[] { 1, 2, 3};
+        int[] arrEx6 = new int[]{1, 2, 3};
         System.out.println(Lesson2.ex6(arrEx6));
 //        Lesson2.ex7();
 
@@ -110,4 +88,34 @@ public class Main {
             else System.out.println("Коту " + i + "не хватило еды в миске");
         }
     }
+
+    public static void mainModule2() {
+//            module2.lesson1.Lesson1.ex1();
+
+        String[][] arrEx2 = new String[4][4];
+        for(int i = 0; i < arrEx2[0].length; i++){
+            for(int j = 0; j < arrEx2[0].length; j++){
+                arrEx2[i][j] = "7";
+            }
+
+        }
+        arrEx2[1][1] = "word";
+
+        for (int i = 0; i < arrEx2.length; i++) {
+            for (int j = 0; j < arrEx2[i].length; j++) {
+                System.out.print(arrEx2[i][j] + " ");
+            }
+            System.out.println();
+        }
+        try
+
+    {
+        module2.lesson2.Lesson2.ex1(arrEx2);
+    } catch(MyArraySizeException |
+    MyArrayDataException e)
+
+    {
+        throw new RuntimeException(e);
+    }
+}
 }

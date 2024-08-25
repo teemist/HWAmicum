@@ -1,4 +1,4 @@
-package module1.lessons.lesson2;
+package module1.lesson2;
 
 public class Lesson2 {
     public static void ex1() {
@@ -84,7 +84,6 @@ public class Lesson2 {
     }
 
     public static void ex7(int[] array, int n) {
-        // сделать
     }
 
 }

@@ -1,6 +1,6 @@
-package module1.lessons.lesson6;
+package module1.lesson6;
 
-import module1.lessons.lesson7.Plate;
+import module1.lesson7.Plate;
 
 public class Cat extends Animal{
     public Cat(String name) {

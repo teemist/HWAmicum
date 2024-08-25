@@ -1,4 +1,4 @@
-package module1.lessons.lesson1;
+package module1.lesson1;
 
 public class Lesson1 {
 

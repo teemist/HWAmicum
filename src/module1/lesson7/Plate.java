@@ -1,4 +1,4 @@
-package module1.lessons.lesson7;
+package module1.lesson7;
 
 public class Plate {
     private int food;

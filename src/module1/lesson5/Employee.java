@@ -1,4 +1,4 @@
-package module1.lessons.lesson5;
+package module1.lesson5;
 
 public class Employee {
     private String fio;

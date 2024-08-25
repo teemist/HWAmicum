@@ -1,6 +1,5 @@
-package module1.lessons.lesson3;
+package module1.lesson3;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Lesson3 {
